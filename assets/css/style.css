@@ -1,0 +1,197 @@
+/* Colors' listing
+orange : #FF6702;
+orange (variante claire) : #FF9A55;
+orange (variante sombre) : #CA5203;
+orange (toujours plus sombre) : #662700;
+bleu électrique : #009FFD;
+bleu électrique (variante claire) : #3EC8FE;
+bleu électrique (variante sombre) : #006DB2;
+bleu électrique (toujours plus sombre) : #00426b;
+police d'écriture (font) : Anton;
+*/
+body {
+  font-family: 'Anton', sans-serif;
+  background: linear-gradient(0.25turn, #009FFD -50%, #00426b 50%, #009FFD 150%);
+  overflow-x: hidden;
+}
+header {
+  height: 7.5rem;
+}
+header img {
+  height:7.5rem;
+}
+footer {
+  background-color: #00426b;
+  border-top: ridge 4px;
+  border-color: #CA5203;
+  box-shadow: 0px -3px 9px 0px black;
+}
+li {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.borderMatchUp {
+  text-shadow: -2px 0 #662700, 0 2px #662700, 2px 0 #CA5203, 0 -2px #FF9A55;
+}
+.catchParameters {
+  width: 60rem;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 125%;
+  margin-top: 3%
+}
+/* Navbar related */
+.navbarText {
+  color: #FF6702;
+  font-size: 1.5rem;
+  text-shadow: -1px 0 #662700, 0 1px #662700, 1px 0 #CA5203, 0 -1px #FF9A55;
+}
+.orangeMU {
+  color: #FF6702;
+}
+nav {
+  background-color: #006DB2;
+  border : 4px #CA5203;
+  border-style: ridge;
+  border-left: none;
+  border-right: none;
+  height: 4rem;
+  box-shadow: 0px 3px 9px 0px black;
+}
+nav a:hover {
+  color: orange;
+}
+.contentBackground {
+  background-color: #00426b;
+}
+.card {
+  border : 4px #CA5203;
+  border-style: ridge;
+  border-radius: 10px;
+  max-height: 25rem;
+  background: radial-gradient(#009FFD, #00426b);
+  box-shadow: 3px 3px 6px 0px black;
+}
+.card-body {
+  background-color: rgba(0, 0, 0, 0.65);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+.cardBackground01 {
+  background-image: url("../img/terryBogard.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.cardBackground02 {
+  background-image: url("../img/OuisticramPokemonGO.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.cardBackground03 {
+  background-image: url("../img/monthlyOctobre.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.cardBackground04 {
+  background-image: url("../img/ATDJ2019.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.card-text {
+  max-height: 7rem;
+  text-align: justify;
+  overflow: hidden;
+  color: white;
+}
+.card-title {
+  max-height: 4rem;
+  color: white;
+}
+.btn-MatchUp {
+  background-color: #FF6702;
+}
+.modal-content {
+  border : 4px #CA5203;
+  border-style: ridge;
+  border-radius: 10px;
+}
+.modal-header {
+  background: linear-gradient(#00426b 85%,#006DB2 100%);
+  border: none;
+}
+.modal-title {
+  color: white;
+  font-size: 1.5rem;
+}
+.modal-body {
+  background-color: #006DB2;
+}
+.img-thumbnail {
+  max-height: 7rem;
+}
+.modalLegend {
+  font-style: italic;
+  font-size: 1rem;
+}
+.modal-footer {
+  background: linear-gradient(#006DB2 0%,#00426b 15%);
+  border: none;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+#socialNetworks i {
+  margin: 0.5rem;
+}
+#ourPartners img {
+  max-height: 4.5rem;
+  max-width: 6rem;
+  margin: 0.5rem;
+}
+#andMoreTitle {
+  font-size: 1.2rem;
+}
+/* Changes when in mobile mode */
+@media screen and (max-width: 768px){
+
+  body .navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 3;
+    background-size: contain;
+    border-bottom: none;
+    height: auto;
+    box-shadow: 0px -3px 9px 0px black;
+  }
+  header {
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    background: radial-gradient(#009FFD, #00426b);
+    border-bottom: 4px #CA5203;
+    border-style: ridge;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    box-shadow: 0px 3px 9px 0px black;
+  }
+  header img {
+    height: 9rem;
+    margin: 0.5rem;
+  }
+  header h1 {
+    display: none;
+  }
+  footer {
+    padding-bottom:4rem;
+  }
+}
+/* Changes when in mobile mode */
